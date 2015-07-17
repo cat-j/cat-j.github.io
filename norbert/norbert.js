@@ -35,27 +35,27 @@ switch (user) {
                 }
             } else {
                 window.alert("rizzo");
-            }
+            };
         } else {
             var springup = prompt("El taxi sigue su camino hasta las afueras de Mar del Plata y te deja en la fábrica de Spring Up. ¿Querés entrar?").toUpperCase();
-            if (springup=="SÍ" || springup=="SI") {
+            if (springup==="SÍ" || springup==="SI") {
                 var moneditas = prompt("Aparece el dueño de la fábrica, que es Norbert, con la oferta más insólita el mundo de Spring Up, a tan sólo shhhhhhhmoneditas. ¿Querés comprarla?").toUpperCase();
-                if (moneditas == "SÍ" || moneditas == "SI") {
-                    window.alert("ESPRINAP ESPRINAP ESPRINAP ESPRINAP ESPRINAP ESPRINAP ESPRINAP ESPRINAP (FIN)") else {
-                        window.alert("VAMOS MANAOS (FIN)");
-                    };
+                if (moneditas === "SÍ" || moneditas === "SI") {
+                    window.alert("ESPRINAP ESPRINAP ESPRINAP ESPRINAP ESPRINAP ESPRINAP ESPRINAP ESPRINAP (FIN)")
+                } else {
+                    window.alert("VAMOS MANAOS");
                 };
             } else {
-                var aluminio == prompt("Le decís al tachero que preferís la Manaos y que te deje en otro lado, entonces te lleva a Aberturas Peralta Rrrrrrrrramos. ¿Puertas, ventanas, madera y aluminio?").toUpperCase();
-                if (aluminio == "SÍ" || aluminio == "SI") == "SI" {
+                var aluminio = prompt("Le decís al tachero que preferís la Manaos y que te deje en otro lado, entonces te lleva a Aberturas Peralta Rrrrrrrrramos. ¿Puertas, ventanas, madera y aluminio?").toUpperCase();
+                if (aluminio === "SÍ" || aluminio === "SI") {
                     window.alert("¡ALUMINIO DIJE! Justo estamos en el mes del aluminio (FIN)");
                 } else {
                     var cybercom2 = prompt("Norbert ya se está hartando de que no aceptes sus tratos, así que te vuelve a ofrecer la tarjeta Cybercom y te dice CYBERCOM CYBERCOM. ¿Querés aceptarla esta vez?").toUpperCase();
-                    if (cybercom2 == "SÍ" || cybercom2 == "SI") == "SI" {
-                        window.prompt("Aceptás la tarjeta Cybercom y Norbert está tan desesperado por escuchar tu sí que te la da gratis, pero en realidad era una trampa. Norbert está arreglado con la SIDE y ahora Guillermo 'Cherry' Cherashny tiene acceso a tu celular y a toda tu información personal. FIN");
+                    if (cybercom2 === "SÍ" || cybercom2 === "SI") {
+                        window.alert("Aceptás la tarjeta Cybercom y Norbert está tan desesperado por escuchar tu sí que te la da gratis, pero en realidad era una trampa. Norbert está arreglado con la SIDE y ahora Guillermo 'Cherry' Cherashny tiene acceso a tu celular y a toda tu información personal. FIN");
                     } else {
-                        window.prompt("Consultá EL DESCUENTÓMETROOOOOO. FIN");
-                    };
+                        window.alert("Consultá EL DESCUENTÓMETROOOOOO. FIN");
+                    }
                 };
             };
         }
