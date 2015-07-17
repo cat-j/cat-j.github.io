@@ -39,6 +39,7 @@ switch (user) {
         }
         break;
     case 'ADELGAMATEAR':
+        window.alert("Estamos adelgamateando con yerba ADELGAMATEEEEEEEEEE");
         break;
     default:
     window.alert("Vas a tener que salir... A RRRRRROBAAAARRRRRR");
