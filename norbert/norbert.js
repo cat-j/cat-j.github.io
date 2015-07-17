@@ -41,7 +41,7 @@ switch (user) {
             if (springup=="SÍ" || springup=="SI") {
                 var moneditas = prompt("Aparece el dueño de la fábrica, que es Norbert, con la oferta más insólita el mundo de Spring Up, a tan sólo shhhhhhhmoneditas. ¿Querés comprarla?").toUpperCase();
                 if (moneditas == "SÍ" || moneditas == "SI") {
-                    window.alert("ESPRINAP ESPRINAP ESPRINAP ESPRINAP ESPRINAP ESPRINAP ESPRINAP ESPRINAP (FIN)"); else {
+                    window.alert("ESPRINAP ESPRINAP ESPRINAP ESPRINAP ESPRINAP ESPRINAP ESPRINAP ESPRINAP (FIN)") else {
                         window.alert("VAMOS MANAOS (FIN)");
                     };
                 };
