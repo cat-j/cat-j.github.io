@@ -50,7 +50,7 @@ switch (user) {
                 if (aluminio == "SÍ" || aluminio == "SI") == "SI" {
                     window.alert("¡ALUMINIO DIJE! Justo estamos en el mes del aluminio (FIN)");
                 } else {
-                    var cybercom2 = prompt("Norbert ya se está hartando de que no aceptes sus tratos, así que te vuelve a ofrecer la tarjeta Cybercom y te dice CYBERCOM CYBERCOM. ¿Querés aceptarla esta vez?").toUpperCase;
+                    var cybercom2 = prompt("Norbert ya se está hartando de que no aceptes sus tratos, así que te vuelve a ofrecer la tarjeta Cybercom y te dice CYBERCOM CYBERCOM. ¿Querés aceptarla esta vez?").toUpperCase();
                     if (cybercom2 == "SÍ" || cybercom2 == "SI") == "SI" {
                         window.prompt("Aceptás la tarjeta Cybercom y Norbert está tan desesperado por escuchar tu sí que te la da gratis, pero en realidad era una trampa. Norbert está arreglado con la SIDE y ahora Guillermo 'Cherry' Cherashny tiene acceso a tu celular y a toda tu información personal. FIN");
                     } else {
