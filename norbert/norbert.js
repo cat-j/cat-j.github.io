@@ -1,3 +1,27 @@
+//cortesía de http://www.etnassoft.com/2011/03/03/eliminar-tildes-con-javascript/
+
+var normalize = (function() {
+  var from = "ÃÀÁÄÂÈÉËÊÌÍÏÎÒÓÖÔÙÚÜÛãàáäâèéëêìíïîòóöôùúüûÑñÇç", 
+      to   = "AAAAAEEEEIIIIOOOOUUUUaaaaaeeeeiiiioooouuuunncc",
+      mapping = {};
+ 
+  for(var i = 0, j = from.length; i < j; i++ )
+      mapping[ from.charAt( i ) ] = to.charAt( i );
+ 
+  return function( str ) {
+      var ret = [];
+      for( var i = 0, j = str.length; i < j; i++ ) {
+          var c = str.charAt( i );
+          if( mapping.hasOwnProperty( str.charAt( i ) ) )
+              ret.push( mapping[ c ] );
+          else
+              ret.push( c );
+      }      
+      return ret.join( '' );
+  }
+ 
+})();
+
 var user = prompt("Estás comprando chicles en un kiosco de Mar del Plata y te atiende Norbert Degoas diciendo CYBERCOM CYBERCOM, ¡LLEGÓ CYBERCOM! ¿Preferís PAGAR, CORRER o ADELGAMATEAR?").toUpperCase();
 
 switch (user) {
@@ -36,6 +60,28 @@ switch (user) {
             } else {
                 window.alert("rizzo");
             }
+        } else {
+            var springup = prompt("El taxi sigue su camino hasta las afueras de Mar del Plata y te deja en la fábrica de Spring Up. ¿Querés entrar?").toUpperCase();
+            if (springup=="SÍ" || springup=="SI") {
+                var moneditas = prompt("Aparece el dueño de la fábrica, que es Norbert, con la oferta más insólita el mundo de Spring Up, a tan sólo shhhhhhhmoneditas. ¿Querés comprarla?").toUpperCase();
+                if normalize(moneditas) == "SI" {
+                    window.alert("ESPRINAP ESPRINAP ESPRINAP ESPRINAP ESPRINAP ESPRINAP ESPRINAP ESPRINAP (FIN)"); else {
+                        window.alert("VAMOS MANAOS (FIN)");
+                    };
+                };
+            } else {
+                var aluminio == prompt("Le decís al tachero que preferís la Manaos y que te deje en otro lado, entonces te lleva a Aberturas Peralta Rrrrrrrrramos. ¿Puertas, ventanas, madera y aluminio?").toUpperCase();
+                if normalize(aluminio) == "SI" {
+                    window.alert("¡ALUMINIO DIJE! Justo estamos en el mes del aluminio (FIN)");
+                } else {
+                    var cybercom2 = prompt("Norbert ya se está hartando de que no aceptes sus tratos, así que te vuelve a ofrecer la tarjeta Cybercom y te dice CYBERCOM CYBERCOM. ¿Querés aceptarla esta vez?").toUpperCase;
+                    if normalize(cybercom2) == "SI" {
+                        window.prompt("Aceptás la tarjeta Cybercom y Norbert está tan desesperado por escuchar tu sí que te la da gratis, pero en realidad era una trampa. Norbert está arreglado con la SIDE y ahora Guillermo 'Cherry' Cherashny tiene acceso a tu celular y a toda tu información personal. FIN");
+                    } else {
+                        window.prompt("Consultá EL DESCUENTÓMETROOOOOO. FIN");
+                    };
+                };
+            };
         }
         break;
     case 'ADELGAMATEAR':
