@@ -24,7 +24,7 @@ var $ladrillohueco = "<img src='ladrillohueco.png' alt='LADRILLO HUECO 27 CENTAV
 
 var $manaos = "<img src='manaos.jpg' alt='¡VAMOS MANAOS!'>";
 
-var $rizzo = "<img src='elcondor.png' alt='riiiiiiizzzzzooooooooooo'>";
+var $rizzo = "<img src='rizzo.png' alt='riiiiiiizzzzzooooooooooo'>";
 
 var $springup = "<img src='springup.png' alt='ESPRINAP ESPRINAP ESPRINAP ESPRINAP ESPRINAP ESPRINAP ESPRINAP ESPRINAP'>";
 
