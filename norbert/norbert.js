@@ -8,7 +8,19 @@ var $aluminio = "<img src='aluminio.png' alt='Aluminio'>";
 
 var $aragone = "<img src='aragone.png' alt='ARAGOOOOONEEEEEEEEE'>";
 
+var $cherashnygif = "<img src='cherashny.gif' alt='Guillermo Cherashny'>";
+
 var $cherashny = "<img src='cherashny.jpg' alt='Guillermo Cherashny'>";
+
+var $cherashny2 = "<img src='cherashny2.jpg' alt='Guillermo Cherashny'>";
+
+var $cherashny3 = "<img src='cherashny3.jpg' alt='Guillermo Cherashny'>";
+
+var $cherashny4 = "<img src='cherashny4.jpg' alt='Guillermo Cherashny'>";
+
+var $cherry = "<img src='cherry.jpg' alt='Guillermo Cherashny'>";
+
+var cherashnyArray = [$cherashnygif, $cherashny2, $cherashny3, $cherashny4, $cherry, $cherashny];
 
 var $cybercom = "<img src='cybercom.png' alt='CYBERCOM CYBERCOM, LLEGÓ CYBERCOM'>";
 
@@ -129,7 +141,9 @@ switch (user) {
                     if (cybercom2 === "SÍ" || cybercom2 === "SI") {
                         window.alert("Aceptás la tarjeta Cybercom y Norbert está tan desesperado por escuchar tu sí que te la da gratis, pero en realidad era una trampa. Norbert está arreglado con la SIDE y ahora Guillermo 'Cherry' Cherashny tiene acceso a tu celular y a toda tu información personal. FIN");
                         $(document).ready(function() {
-                            addImage($cherashny);
+                            for (var i=0; i < cherashnyArray.length; i++) {
+                                addImage(cherashnyArray[i]);
+                            }
                         });
                     } else {
                         window.alert("Consultá EL DESCUENTÓMETROOOOOO. FIN");
