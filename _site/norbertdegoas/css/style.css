@@ -1,0 +1,154 @@
+@import url(http://fonts.googleapis.com/css?family=Coda:800|Allan);
+
+/** * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/) * http://cssreset.com */html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video {	margin: 0;	padding: 0;	border: 0;	font-size: 100%;	font: inherit;	vertical-align: baseline;}/* HTML5 display-role reset for older browsers */article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {	display: block;}body {	line-height: 1;}ol, ul {	list-style: none;}blockquote, q {	quotes: none;}blockquote:before, blockquote:after,q:before, q:after {	content: '';	content: none;}table {	border-collapse: collapse;	border-spacing: 0;}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    background: #000;
+    overflow-x: hidden;
+}
+
+header {
+    background: #dd0000;
+    padding: 1em;
+}
+
+.estrellas {
+    width: 100%;
+    height: 20px;
+    background-image: url(../img/estrellas_fila.gif);
+}
+
+.norbert {
+    display: none;
+}
+
+.titulo {
+    margin: 0 auto;
+    max-width: 758px;
+}
+
+h1 {
+    font-size: 2.5em;
+    font-family: 'cooper-black-std', serif;
+    color: #ffff00;
+    text-shadow: 0 1px 0 #e6e609, 0 2px 0 #d0d008, 0 3px 0 #b1b10a, 0 4px 0 #8d8d09, 0 5px 0 #67670a, 0 6px 0 #46460b, 0 7px 0 #34340a, 0 8px 7px #333500;
+    padding-top: 0.5em;
+}
+
+.subtit {
+    font-family: 'Allan', cursive;
+    font-size: 1.5em;
+    color: #ffffff;
+    padding: 0.5em 0;
+}
+
+.botones {
+    padding: 1em;
+    width: 100%;
+    max-width: 758px;
+    overflow: hidden;
+    margin: 0 auto;
+    z-index: 999999;
+}
+
+.boton-sonido {
+    float: left;
+    width: 100%;
+    display: inline-block;
+    font-size: 1.5em;
+    font-family: 'Coda', sans-serif;
+    background-image: linear-gradient(#24e800, #1cb400 80%);
+    -webkit-border-radius: 10px;
+    -moz-border-radius:    10px;
+    border-radius:         10px;
+    text-shadow: 2px 2px 2px #fff;
+    margin: 0.2em 0;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: 1px solid #3bff00;
+}
+
+aside, #colchon {
+    display: none;
+}
+
+@media only screen and (min-width:758px) {
+    
+    .boton-sonido {
+        width: 48%;
+        margin: 0.2em;
+    }
+    
+}
+
+@media only screen and (min-width:960px) {
+    
+    .flip {
+        -webkit-transform: scaleX(-1);
+        -moz-transform:    scaleX(-1);
+        transform:         scaleX(-1);
+        filter: FlipH;
+        -ms-filter: FlipH;
+    }
+    
+    aside {
+        display: block;
+        position: absolute;
+        top: 200px;
+        padding: 1em;
+        width: 150px;
+    }
+    
+    .norbert {
+        display: block;
+        height: 140px;
+        position: relative;
+        top: 12px;
+    }
+    
+    .izq {
+        float: left;
+    }
+    
+    .der {
+        float: right;
+    }
+    
+    .amor {
+        left: 0;
+        color: #ff0000;
+        font-family: 'cooper-black-std', 'Arial', sans-serif;
+        text-align: center;
+    }
+    
+    .amor a {
+        color: #ff0000;
+        font-size: 1.5em;
+    }
+    
+    .lapuerta {
+        right: 0;
+        text-align: right;
+        color: #ffff00;
+    }
+    
+    .lapuerta a {
+        color: #ffff00;
+        font-size: 1.2em;
+        font-weight: 900;
+        font-style: oblique;
+    }
+    
+    #colchon {
+        display: block;
+        position: absolute;
+        bottom: 20%;
+        left: -350px;
+        z-index: -1;
+    }
+}
